@@ -1,0 +1,241 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.section {
+    min-height: 250px;
+    background-color: #dddddd;
+    border: 1px solid #c4c4c4;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.top {
+    & * {
+        margin-bottom: 10px;
+    }
+}
+
+.buttons {
+    width: 180px;
+    margin: 0 auto;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+
+    &__btn {
+        width: 48%;
+        height: 50px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    &__edit {
+        background-color: rgb(255, 208, 0);
+    }
+
+    &__style {
+        background-color: rgb(0, 195, 255);
+    }
+}
+
+.bottom {
+    color: rgb(65, 65, 65);
+    position: relative;
+
+    &__edit-area {
+        width: 99%;
+        height: 170px;
+        resize: none;
+    }
+
+    &__edit-buttons {
+        width: 130px;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__edit-btn {
+        width: 48%;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+        color: rgb(255, 255, 255);
+    }
+
+    &__edit-add {
+        background-color: red;
+    }
+
+    &__edit-save {
+        background-color: green;
+    }
+
+    &__style-form>* {
+        margin-bottom: 10px;
+    }
+
+    &__style-title {
+        font-size: 20px;
+    }
+
+    &__style-size+* {
+        margin-right: 10px;
+    }
+
+    &__style-fontFamile {
+        width: 280px;
+        height: 40px;
+        color: rgb(112, 112, 112);
+        border: 1px solid rgb(172, 172, 172);
+    }
+
+    &__style-buttons {
+        width: 280px;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__style-btn {
+        width: 48%;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(77, 77, 77);
+    }
+
+    &__style-bold+* {
+        margin-right: 15px;
+        font-weight: 700;
+    }
+
+    &__style-cursive+* {
+        font-style: oblique;
+    }
+
+    &__box {
+        width: 180px;
+        height: 180px;
+        outline: 1px solid rgb(97, 97, 97);
+        position: absolute;
+        top: calc(50% - 90px);
+        right: 70px;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    &__box-item {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.add {
+
+    &__choose {
+        margin-bottom: 25px;
+    }
+
+    &__choose * {
+        margin-bottom: 10px;
+    }
+
+    &__choose-item+* {
+        font-size: 20px;
+        margin-right: 15px;
+    }
+
+
+    &__table>form>* {
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        width: 13%;
+        margin-right: 1%;
+        font-size: 20px;
+        font-weight: 400;
+        display: inline-block;
+    }
+
+    &__input{
+        width: 85%;
+        height: 35px;
+        border: 1px solid rgb(146, 146, 146);
+        display: inline-block;
+    }
+
+    &__table-title{
+        display: block;
+    }
+
+    &__table-items{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 25px;
+
+    }
+
+    &__table-itemTitle{
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    &__table-select{
+        width: 120px;
+        height: 35px;
+    }
+
+    &__table-btn{
+        display: block;
+        width: 170px;
+        height: 60px;
+        font-size: 30;
+        border: none;
+        background-color: rgb(80, 255, 147);
+    }
+
+    &__list>form>*{
+        margin-bottom: 15px;
+    }
+
+    &__list-btn{
+        display: block;
+        width: 170px;
+        height: 60px;
+        font-size: 30;
+        border: none;
+        background-color: rgb(80, 255, 147);
+    }
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.oblique {
+    font-style: oblique;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+    
+}
+

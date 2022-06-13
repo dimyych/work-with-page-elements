@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+
+
+<body>
+
+    <div class="container">
+        <div class="wrapper">
+            <div class="top section">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+
+            </div>
+
+            <div class="buttons">
+                <button class="buttons__edit buttons__btn">edit</button>
+                <button class="buttons__style buttons__btn">style</button>
+            </div>
+
+            <div class="bottom section">
+                <div class="bottom__edit hide">
+                    <textarea class="bottom__edit-area"></textarea>
+                    <div class="bottom__edit-buttons">
+                        <button class="bottom__edit-add bottom__edit-btn">add</button>
+                        <button class="bottom__edit-save bottom__edit-btn">save</button>
+                    </div>
+                </div>
+
+                <div class="bottom__style hide">
+                    <form class="bottom__style-form">
+                        <h2 class="bottom__style-title">Font Size</h2>
+                        <div class="bottom__style-fontSize" onclick="fontSize()">
+                            <input class="bottom__style-size" type="radio" name="size" value="12px"><span>12px</span>
+                            <input class="bottom__style-size" type="radio" name="size" value="14px"><span>14px</span>
+                            <input class="bottom__style-size" type="radio" name="size" value="16px"
+                                checked><span>16px</span>
+                            <input class="bottom__style-size" type="radio" name="size" value="18px"><span>18px</span>
+                            <input class="bottom__style-size" type="radio" name="size" value="20px"><span>20px</span>
+
+                        </div>
+
+                        <h2 class="bottom__style-title">Font Famile</h2>
+                        <select class="bottom__style-fontFamile" name="fontFamile">
+                            <option class="bottom__style-famile" value="Choose option">Choose option</option>
+                            <option class="bottom__style-famile" value="cursive">cursive</option>
+                            <option class="bottom__style-famile" value="fantasy">fantasy</option>
+                            <option class="bottom__style-famile" value="monospace">monospace</option>
+                            <option class="bottom__style-famile" value="sens-serif">sens-serif</option>
+                        </select>
+
+                        <h2 class="bottom__style-title">Colors</h2>
+                        <div class="bottom__style-buttons">
+                            <button class="bottom__style-btn-color bottom__style-btn" type="button">Color of
+                                Text</button>
+                            <button class="bottom__style-btn-bg bottom__style-btn" type="button">Bacground
+                                color</button>
+                        </div>
+                        <h2 class="bottom__style-title">Style</h2>
+
+                        <input class="bottom__style-bold" type="checkbox"><span>Bold Text</span>
+                        <input class="bottom__style-cursive" type="checkbox"><span>Cursive Text</span>
+
+                    </form>
+                    <div class="bottom__box-colors bottom__box hide">
+                        <div class="bottom__box-item"></div>
+                        <div class="bottom__box-item"></div>
+                        <div class="bottom__box-item"></div>
+                        <div class="bottom__box-item"></div>
+                        <div class="bottom__box-item"></div>
+                        <div class="bottom__box-item"></div>
+                        <div class="bottom__box-item"></div>
+                        <div class="bottom__box-item"></div>
+                        <div class="bottom__box-item"></div>
+                    </div>
+
+                    <div class="bottom__box-bgs bottom__box hide">
+                        <div class="bottom__box-item"></div>
+                        <div class="bottom__box-item"></div>
+                        <div class="bottom__box-item"></div>
+                        <div class="bottom__box-item"></div>
+                        <div class="bottom__box-item"></div>
+                        <div class="bottom__box-item"></div>
+                        <div class="bottom__box-item"></div>
+                        <div class="bottom__box-item"></div>
+                        <div class="bottom__box-item"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="add section hide">
+
+            <form class="add__choose">
+                <h2 class="add__choose-title ">Choode what you want:</h2>
+                <div class="add__choose-items" >
+                    <input class="add__choose-item add__choose-table" name="choose" type="radio"><span>table</span>
+                    <input class="add__choose-item add__choose-list" name="choose" type="radio"><span>list</span>
+                </div>
+            </form>
+
+            <div class="add__table hide">
+                <form action="">
+                <h4 class="add__table-text add__text">Count TR:</h4>
+                <input class="add__table-input add__input countTR" type="text" placeholder="Count TR:">
+                <h4 class="add__table-text add__text">Count TD:</h4>
+                <input class="add__table-input add__input countTD" type="text" placeholder="Count TD:">
+                <h2 class="add__table-title">Add style to your table:</h2>
+                <h4 class="add__table-text add__text">Width of TD:</h4>
+                <input class="add__table-input add__input widthTD" type="text" placeholder="Width of TD:">
+                <h4 class="add__table-text add__text">Height of TD:</h4>
+                <input class="add__table-input add__input heightTD" type="text" placeholder="Height of TD:">
+
+                <div class="add__table-items">
+                    <h4 class="add__table-item add__table-itemTitle">Width of border:</h4>
+                    <input class="add__table-item widthBorder" type="text" placeholder="Width:">
+
+                    <h4 class="add__table-item add__table-itemTitle">Type of border:</h4>
+                    <select class="add__table-item add__table-select typeBorder">
+                        <option value="dotted">dotted</option>
+                        <option value="dashed">dashed</option>
+                        <option value="solid">solid</option>
+                        <option value="double">double</option>
+                    </select>
+
+                    <h4 class="add__table-item add__table-itemTitle ">Color of border:</h4>
+                    <select class="add__table-item add__table-select colorBorder">
+                        <option value="black">black</option>
+                        <option value="red">red</option>
+                        <option value="blue">blue</option>
+                        <option value="green">green</option>
+                    </select>
+                </div>
+
+                <button class="add__table-btn" type="button">Create table</button>
+            </form>
+            </div>
+
+            <div class="add__list hide">
+                <form action="">
+                <h4 class="add__list-text add__text">Count Li:</h4>
+                <input class="add__list-input add__input countLi" type="text" placeholder="Count Li:">
+                <h4 class="add__list-text add__text">Type of marks:</h4>
+                <select class="add__input add__list-select typeLi">
+                    <option value="circle">circle</option>
+                    <option value="disc">disc</option>
+                    <option value="square">square</option>
+                </select>
+                <button class="add__list-btn" type="button">Create list</button>
+            </form>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
